@@ -8,9 +8,9 @@
 /* inizio header */
 
 header{
+    padding-top: 10px;
     /* degub */
     background-color: aquamarine;
-    padding-top: 10px ;
 }
 /* parte prima */
 .sotto-contenitore{
@@ -18,14 +18,16 @@ header{
     margin: auto;
     width: 70%;
     align-items: center;
+    margin-bottom: 10px;
     /* debug */
     height: 40px;
 }
 /* stili div interno al sotto-contenitore */
 .sotto-contenitore>div{
+   padding: 10px 0;
+    /* debug */
    border: 2px black dotted;
    background-color: orange;
-   padding: 10px 0;
 }
 
 .sotto-contenitore>.centro{
@@ -49,8 +51,9 @@ header{
 /* inizio sotto-contenitore2 */
 
 #sotto-contenitore2{
-    background-color: blue;
     padding: 20px 0;
+    /* debug */
+    background-color: blue;
 }
 
 #sotto-contenitore2>div{
@@ -59,5 +62,49 @@ header{
     /* debug */
     height: 300px;
     background-color: purple;
+    border: 2px dotted black;
+}
+
+/* inizio main */
+
+main section{
+    padding: 20px 0;
+    /* debug */
+    background-color: beige;
+}
+
+main section:nth-child(even) {
+    background-color: lightgrey;
+}
+/* caratteristiche contenitori che contengono il contnuto */
+.items{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    /* debug */
+    height: 200px;
+    background-color: aquamarine;
+}
+/* parte larga contenuto */
+.items .largo{
+    width: 60%;
+    /* debug */
+    background-color: blue;
+    border: 2px dotted black;
+}
+/* parte stretta contenuto */
+.items .stretto{
+    width:40% ;
+   /* debug */
+   background-color: pink;
+   border: 2px dotted black;
+}
+
+.diverso>div{
+    width: 70%;
+    margin: auto;
+    /* debug */
+    height: 400px;
+    background-color:green;
     border: 2px dotted black;
 }
