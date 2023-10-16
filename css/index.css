@@ -10,20 +10,20 @@
 header{
     /* degub */
     background-color: aquamarine;
-    padding: 10px 0;
+    padding-top: 10px ;
 }
-
+/* parte prima */
 .sotto-contenitore{
     display: flex;
     margin: auto;
-    width: 80%;
+    width: 70%;
     align-items: center;
     /* debug */
     height: 40px;
 }
-
+/* stili div interno al sotto-contenitore */
 .sotto-contenitore>div{
-   border: 1px black dotted;
+   border: 2px black dotted;
    background-color: orange;
    padding: 10px 0;
 }
@@ -38,10 +38,26 @@ header{
     margin: 0 10px;
 }
 
+.sotto-contenitore>.destra, .sotto-contenitore>.sinistra{
+    width: 25%;
+}
+
 .sotto-contenitore>.destra{
     text-align: end;
 }
 
-.sotto-contenitore>.destra, .sotto-contenitore>.sinistra{
-    width: 25%;
+/* inizio sotto-contenitore2 */
+
+#sotto-contenitore2{
+    background-color: blue;
+    padding: 20px 0;
+}
+
+#sotto-contenitore2>div{
+    width: 60%;
+    margin: auto;
+    /* debug */
+    height: 300px;
+    background-color: purple;
+    border: 2px dotted black;
 }
